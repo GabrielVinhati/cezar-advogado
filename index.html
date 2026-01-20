@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Antifraude Bancária</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        elite: {
+                            black: '#050505', // Fundo super escuro
+                            red: '#B91C1C',   // Vermelho institucional (baseado na logo)
+                            redHover: '#991b1b',
+                            gray: '#262626'   // Cinza para cards/elementos secundários
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        // Padrão de grid sutil inspirado nas imagens
+                        'grid-pattern': "linear-gradient(to right, #262626 1px, transparent 1px), linear-gradient(to bottom, #262626 1px, transparent 1px)"
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Ajuste do grid background */
+        .bg-grid {
+            background-size: 40px 40px;
+            mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="bg-elite-black text-white font-sans overflow-x-hidden">
+
+    <section class="relative min-h-screen flex items-center justify-center py-20 lg:py-0 overflow-hidden">
+        
+        <div class="absolute inset-0 bg-grid-pattern opacity-[0.15] bg-grid pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                
+                <div class="w-full lg:w-1/2 space-y-8" data-aos="fade-right" data-aos-duration="1000">
+                    
+                    <div class="inline-block bg-elite-red/10 border border-elite-red/30 px-4 py-1 rounded-full">
+                        <span class="text-elite-red font-bold text-sm tracking-widest uppercase">Elite Antifraude Bancária</span>
+                    </div>
+
+                    <h1 class="text-4xl lg:text-6xl font-black leading-tight">
+                        FRAUDES BANCÁRIAS NÃO SÃO SOBRE <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-elite-red">“TESE BONITA”</span>.
+                    </h1>
+                    
+                    <h2 class="text-xl lg:text-2xl text-gray-300 font-medium leading-relaxed border-l-4 border-elite-red pl-6">
+                        São sobre estrutura, prova e dinheiro do outro lado.
+                    </h2>
+
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        O Elite Antifraude Bancária é um curso avançado para advogados que querem atuar contra bancos com previsibilidade, aumentar a taxa de procedência e justificar honorários mais altos, sem depender de apostas jurídicas.
+                    </p>
+
+                    <ul class="space-y-4 text-gray-200">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-6 h-6 text-elite-red flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="font-semibold">Réus solventes</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-6 h-6 text-elite-red flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="font-semibold">Teses consolidadas</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-6 h-6 text-elite-red flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="font-semibold">Alto volume de demandas</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-6 h-6 text-elite-red flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="font-semibold">Honorários iniciais, êxito e sucumbência</span>
+                        </li>
+                    </ul>
+
+                    <div class="pt-4">
+                        <a href="#checkout" class="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-elite-red font-pj rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-elite-redHover">
+                            QUERO ATUAR COM ESTRATÉGIA
+                            <svg class="w-5 h-5 ml-2 transition-transform duration-200 group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                            <div class="absolute -inset-3 rounded-lg bg-elite-red opacity-20 group-hover:opacity-40 blur-lg transition-opacity duration-200"></div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="w-full lg:w-1/2 relative" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-elite-red/20 rounded-full blur-[100px] pointer-events-none"></div>
+                    
+                    <div class="relative z-10 rounded-2xl overflow-hidden border border-gray-800 bg-gray-900 aspect-[4/5] flex items-center justify-center group">
+                        
+                        <img src="https://placehold.co/600x750/1a1a1a/FFF?text=FOTO+DO+ESPECIALISTA" 
+                             alt="Especialista Elite Antifraude" 
+                             class="object-cover w-full h-full opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                             
+                        <div class="absolute bottom-4 left-4 bg-black/70 px-4 py-2 rounded border-l-4 border-elite-red backdrop-blur-sm">
+                            <p class="text-xs text-gray-300 font-mono">// Substituir por foto do advogado</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="relative py-20 bg-elite-black border-t border-gray-900 overflow-hidden">
+    
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-elite-red/10 blur-[120px] pointer-events-none"></div>
+    
+        <div class="container mx-auto px-6 relative z-10">
+            
+            <div class="max-w-4xl mx-auto mb-16" data-aos="fade-up" data-aos-duration="1000">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-elite-red to-red-900 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+                    
+                    <div class="relative aspect-video rounded-xl overflow-hidden bg-gray-900 border border-gray-800 shadow-2xl">
+                        
+                        <div class="absolute inset-0 flex items-center justify-center bg-neutral-900 cursor-pointer group">
+                            <img src="https://placehold.co/1280x720/1a1a1a/FFF?text=THUMBNAIL+DO+VIDEO" 
+                                 alt="Capa do Vídeo" 
+                                 class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity">
+                            
+                            <div class="absolute w-20 h-20 bg-elite-red rounded-full flex items-center justify-center pl-1 shadow-[0_0_30px_rgba(185,28,28,0.6)] group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                
+                <p class="text-center text-gray-500 text-sm mt-4 font-mono">
+                    <span class="text-elite-red mr-2">●</span> Assista para entender a estratégia (3–5 min)
+                </p>
+            </div>
+    
+            <div class="max-w-3xl mx-auto text-center space-y-12">
+                
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-xl lg:text-2xl text-gray-200 font-light leading-relaxed">
+                        A maioria dos advogados <span class="text-white font-bold">não perde</span> ações de fraude bancária porque a tese é ruim, mas porque:
+                    </p>
+                </div>
+    
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" data-aos="fade-up" data-aos-delay="400">
+                    
+                    <div class="bg-gray-900/50 border border-gray-800 p-4 rounded-lg flex items-center gap-4 hover:border-elite-red/50 transition-colors">
+                        <div class="w-10 h-10 rounded bg-red-900/20 flex items-center justify-center flex-shrink-0 text-elite-red">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </div>
+                        <span class="text-lg font-semibold text-gray-200 text-left">Erra na <span class="text-white">Prova</span></span>
+                    </div>
+    
+                    <div class="bg-gray-900/50 border border-gray-800 p-4 rounded-lg flex items-center gap-4 hover:border-elite-red/50 transition-colors">
+                        <div class="w-10 h-10 rounded bg-red-900/20 flex items-center justify-center flex-shrink-0 text-elite-red">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </div>
+                        <span class="text-lg font-semibold text-gray-200 text-left">Erra na <span class="text-white">Estratégia</span></span>
+                    </div>
+    
+                    <div class="bg-gray-900/50 border border-gray-800 p-4 rounded-lg flex items-center gap-4 hover:border-elite-red/50 transition-colors">
+                        <div class="w-10 h-10 rounded bg-red-900/20 flex items-center justify-center flex-shrink-0 text-elite-red">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </div>
+                        <span class="text-lg font-semibold text-gray-200 text-left">Erra na <span class="text-white">Precificação</span></span>
+                    </div>
+    
+                    <div class="bg-gray-900/50 border border-gray-800 p-4 rounded-lg flex items-center gap-4 hover:border-elite-red/50 transition-colors">
+                        <div class="w-10 h-10 rounded bg-red-900/20 flex items-center justify-center flex-shrink-0 text-elite-red">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </div>
+                        <span class="text-lg font-semibold text-gray-200 text-left">Erra no tipo de <span class="text-white">Cliente que aceita</span></span>
+                    </div>
+    
+                </div>
+    
+                <div class="pt-8 border-t border-gray-800/50" data-aos="fade-in" data-aos-delay="600">
+                    <blockquote class="text-2xl font-bold text-white italic">
+                        "Técnica, aqui, não é discurso acadêmico.<br class="hidden md:block">
+                        É meio para gerar <span class="text-elite-red bg-elite-red/10 px-2 rounded">resultado financeiro</span> com segurança jurídica."
+                    </blockquote>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <section class="relative py-24 bg-neutral-950">
+    
+        <div class="absolute inset-0 bg-grid-pattern opacity-[0.1] bg-grid pointer-events-none"></div>
+    
+        <div class="container mx-auto px-6 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-3xl lg:text-5xl font-black text-white uppercase tracking-tight mb-6">
+                    O que o <span class="text-elite-red">Elite</span> permite que você faça
+                </h2>
+                <p class="text-gray-400 text-lg">
+                    Saia da advocacia de "tentativa e erro" para um modelo de atuação estruturada.
+                </p>
+            </div>
+    
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                
+                <div class="group bg-gray-900 border border-gray-800 p-8 rounded-2xl hover:border-elite-red/60 transition-all duration-300 hover:shadow-[0_0_20px_rgba(185,28,28,0.15)]" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-elite-red group-hover:text-white text-gray-400 transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Segurança Técnica</h3>
+                    <p class="text-gray-400">Atue contra bancos sabendo exatamente onde pisar, sem medo das contestações padrão.</p>
+                </div>
+    
+                <div class="group bg-gray-900 border border-gray-800 p-8 rounded-2xl hover:border-elite-red/60 transition-all duration-300 hover:shadow-[0_0_20px_rgba(185,28,28,0.15)]" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-elite-red group-hover:text-white text-gray-400 transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Procedência Maior</h3>
+                    <p class="text-gray-400">Estruture suas ações com os fundamentos que os juízes realmente acolhem, aumentando sua taxa de vitória.</p>
+                </div>
+    
+                <div class="group bg-gray-900 border border-gray-800 p-8 rounded-2xl hover:border-elite-red/60 transition-all duration-300 hover:shadow-[0_0_20px_rgba(185,28,28,0.15)]" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-elite-red group-hover:text-white text-gray-400 transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018a2 2 0 01.485.06l3.76.94m-7 10v5a2 2 0 002 2h.096c.5 0 .905-.405.905-.904 0-.715.211-1.413.608-2.008L17 13V4m-7 10h2m5-10h2a2 2 0 012 2v6a2 2 0 01-2 2h-2.5"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Pare de Perder</h3>
+                    <p class="text-gray-400">Elimine erros básicos que fazem advogados perderem casos que deveriam ser "ganhos".</p>
+                </div>
+    
+                <div class="group bg-gray-900 border border-gray-800 p-8 rounded-2xl hover:border-elite-red/60 transition-all duration-300 hover:shadow-[0_0_20px_rgba(185,28,28,0.15)]" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-elite-red group-hover:text-white text-gray-400 transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Honorários Altos</h3>
+                    <p class="text-gray-400">Tenha argumentos e resultados para justificar cobrar mais caro e receber no êxito.</p>
+                </div>
+    
+                <div class="group bg-gray-900 border border-gray-800 p-8 rounded-2xl hover:border-elite-red/60 transition-all duration-300 hover:shadow-[0_0_20px_rgba(185,28,28,0.15)]" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-elite-red group-hover:text-white text-gray-400 transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Previsibilidade</h3>
+                    <p class="text-gray-400">Transforme ações esporádicas em um fluxo de caixa previsível para o seu escritório.</p>
+                </div>
+    
+                <div class="group bg-gray-900 border border-gray-800 p-8 rounded-2xl hover:border-elite-red/60 transition-all duration-300 hover:shadow-[0_0_20px_rgba(185,28,28,0.15)]" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-elite-red group-hover:text-white text-gray-400 transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Filtro de Clientes</h3>
+                    <p class="text-gray-400">Aprenda a dizer não para clientes ruins e foque naqueles que trazem retorno real.</p>
+                </div>
+    
+            </div>
+    
+            <div class="mt-20 text-center" data-aos="fade-in" data-aos-delay="700">
+                <div class="inline-block bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border border-gray-700 rounded-lg px-8 py-6 max-w-4xl shadow-xl">
+                    <p class="text-lg lg:text-xl text-gray-200 font-medium">
+                        Tudo focado em atuação na <span class="text-white font-bold border-b-2 border-elite-red">Vara Cível</span>, com visão estratégica do processo do <span class="text-elite-red font-bold">início ao fim</span>.
+                    </p>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <section class="relative py-24 bg-elite-black border-t border-gray-900">
+    
+        <div class="container mx-auto px-6 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-3xl lg:text-4xl font-black text-white uppercase tracking-tight mb-4">
+                    O que você encontrará <span class="text-elite-red">dentro do curso</span>?
+                </h2>
+                <p class="text-gray-400 text-lg flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5 text-elite-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    Cada módulo responde: <span class="text-white font-semibold">como isso impacta meu ganho?</span>
+                </p>
+            </div>
+    
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 max-w-6xl mx-auto">
+    
+                <div class="space-y-4">
+                    
+                    <div class="accordion-item bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:border-elite-red/40 transition-colors duration-300" data-aos="fade-up" data-aos-delay="0">
+                        <button class="accordion-header w-full flex items-center justify-between p-5 text-left focus:outline-none group">
+                            <div class="flex items-center gap-4">
+                                <span class="text-2xl font-black text-gray-700 group-hover:text-elite-red transition-colors">01</span>
+                                <span class="text-lg font-bold text-white group-hover:text-elite-red transition-colors">Método + Casos Reais</span>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-300 accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content hidden px-5 pb-5 pl-14">
+                            <p class="text-gray-400 text-sm leading-relaxed border-l-2 border-elite-red pl-3">
+                                Como estruturamos casos que outros advogados perderiam. Análise prática de vitórias.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:border-elite-red/40 transition-colors duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <button class="accordion-header w-full flex items-center justify-between p-5 text-left focus:outline-none group">
+                            <div class="flex items-center gap-4">
+                                <span class="text-2xl font-black text-gray-700 group-hover:text-elite-red transition-colors">02</span>
+                                <span class="text-lg font-bold text-white group-hover:text-elite-red transition-colors">Tipos de Fraudes Atuais</span>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-300 accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content hidden px-5 pb-5 pl-14">
+                            <p class="text-gray-400 text-sm leading-relaxed border-l-2 border-elite-red pl-3">
+                                Identifique oportunidades reais e descarte casos ruins logo na triagem.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:border-elite-red/40 transition-colors duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <button class="accordion-header w-full flex items-center justify-between p-5 text-left focus:outline-none group">
+                            <div class="flex items-center gap-4">
+                                <span class="text-2xl font-black text-gray-700 group-hover:text-elite-red transition-colors">03</span>
+                                <span class="text-lg font-bold text-white group-hover:text-elite-red transition-colors">Responsabilização dos Bancos</span>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-300 accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content hidden px-5 pb-5 pl-14">
+                            <p class="text-gray-400 text-sm leading-relaxed border-l-2 border-elite-red pl-3">
+                                Entenda o cenário antes, durante e depois da fraude: onde o banco erra e como apontar.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:border-elite-red/40 transition-colors duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <button class="accordion-header w-full flex items-center justify-between p-5 text-left focus:outline-none group">
+                            <div class="flex items-center gap-4">
+                                <span class="text-2xl font-black text-gray-700 group-hover:text-elite-red transition-colors">04</span>
+                                <span class="text-lg font-bold text-white group-hover:text-elite-red transition-colors">Provas e Preparação</span>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-300 accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content hidden px-5 pb-5 pl-14">
+                            <p class="text-gray-400 text-sm leading-relaxed border-l-2 border-elite-red pl-3">
+                                Checklist de documentos, protocolos e estratégia obrigatória antes de ajuizar.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:border-elite-red/40 transition-colors duration-300" data-aos="fade-up" data-aos-delay="400">
+                        <button class="accordion-header w-full flex items-center justify-between p-5 text-left focus:outline-none group">
+                            <div class="flex items-center gap-4">
+                                <span class="text-2xl font-black text-gray-700 group-hover:text-elite-red transition-colors">05</span>
+                                <span class="text-lg font-bold text-white group-hover:text-elite-red transition-colors">Notificação Extrajudicial</span>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-300 accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content hidden px-5 pb-5 pl-14">
+                            <p class="text-gray-400 text-sm leading-relaxed border-l-2 border-elite-red pl-3">
+                                Como usar a notificação para demonstrar boa-fé, criar pressão e lastro probatório.
+                            </p>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="space-y-4">
+                    
+                    <div class="accordion-item bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:border-elite-red/40 transition-colors duration-300" data-aos="fade-up" data-aos-delay="0">
+                        <button class="accordion-header w-full flex items-center justify-between p-5 text-left focus:outline-none group">
+                            <div class="flex items-center gap-4">
+                                <span class="text-2xl font-black text-gray-700 group-hover:text-elite-red transition-colors">06</span>
+                                <span class="text-lg font-bold text-white group-hover:text-elite-red transition-colors">Como Obter Provas Certas</span>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-300 accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content hidden px-5 pb-5 pl-14">
+                            <p class="text-gray-400 text-sm leading-relaxed border-l-2 border-elite-red pl-3">
+                                Produção antecipada de provas, inversão do ônus e como blindar sua petição inicial.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:border-elite-red/40 transition-colors duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <button class="accordion-header w-full flex items-center justify-between p-5 text-left focus:outline-none group">
+                            <div class="flex items-center gap-4">
+                                <span class="text-2xl font-black text-gray-700 group-hover:text-elite-red transition-colors">07</span>
+                                <span class="text-lg font-bold text-white group-hover:text-elite-red transition-colors">Análise da Contestação</span>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-300 accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content hidden px-5 pb-5 pl-14">
+                            <p class="text-gray-400 text-sm leading-relaxed border-l-2 border-elite-red pl-3">
+                                Derrubando teses de Biometria, IP, geolocalização, assinatura digital e MED.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:border-elite-red/40 transition-colors duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <button class="accordion-header w-full flex items-center justify-between p-5 text-left focus:outline-none group">
+                            <div class="flex items-center gap-4">
+                                <span class="text-2xl font-black text-gray-700 group-hover:text-elite-red transition-colors">08</span>
+                                <span class="text-lg font-bold text-white group-hover:text-elite-red transition-colors">Uso de IA no Direito</span>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-300 accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content hidden px-5 pb-5 pl-14">
+                            <p class="text-gray-400 text-sm leading-relaxed border-l-2 border-elite-red pl-3">
+                                Como usar IA para criar minutas, analisar provas massivas e ganhar escala no escritório.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:border-elite-red/40 transition-colors duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <button class="accordion-header w-full flex items-center justify-between p-5 text-left focus:outline-none group">
+                            <div class="flex items-center gap-4">
+                                <span class="text-2xl font-black text-gray-700 group-hover:text-elite-red transition-colors">09</span>
+                                <span class="text-lg font-bold text-white group-hover:text-elite-red transition-colors">Captação Qualificada</span>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-300 accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content hidden px-5 pb-5 pl-14">
+                            <p class="text-gray-400 text-sm leading-relaxed border-l-2 border-elite-red pl-3">
+                                Estratégias de Marketing e Comercial voltadas especificamente para casos que pagam bem.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:border-elite-red/40 transition-colors duration-300" data-aos="fade-up" data-aos-delay="400">
+                        <button class="accordion-header w-full flex items-center justify-between p-5 text-left focus:outline-none group">
+                            <div class="flex items-center gap-4">
+                                <span class="text-2xl font-black text-gray-700 group-hover:text-elite-red transition-colors">10</span>
+                                <span class="text-lg font-bold text-white group-hover:text-elite-red transition-colors">Precificação e Honorários</span>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-300 accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content hidden px-5 pb-5 pl-14">
+                            <p class="text-gray-400 text-sm leading-relaxed border-l-2 border-elite-red pl-3">
+                                Técnicas para parar de advogar barato e cobrar o valor justo em fraude bancária.
+                            </p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            document.querySelectorAll('.accordion-header').forEach(button => {
+                button.addEventListener('click', () => {
+                    const accordionContent = button.nextElementSibling;
+                    const icon = button.querySelector('.accordion-icon');
+    
+                    // Fecha outros accordions (Opcional - se quiser que abra apenas um por vez, descomente abaixo)
+                    /*
+                    document.querySelectorAll('.accordion-content').forEach(content => {
+                        if (content !== accordionContent) {
+                            content.classList.add('hidden');
+                            content.previousElementSibling.querySelector('.accordion-icon').classList.remove('rotate-180');
+                        }
+                    });
+                    */
+    
+                    // Toggle atual
+                    accordionContent.classList.toggle('hidden');
+                    icon.classList.toggle('rotate-180');
+                });
+            });
+        </script>
+    </section>
+
+    <section class="relative bg-elite-black pt-20 pb-20 overflow-hidden">
+
+        <div class="absolute bottom-0 left-0 w-full h-[500px] bg-gradient-to-t from-elite-red/20 to-transparent pointer-events-none opacity-50"></div>
+    
+        <div class="container mx-auto px-6 relative z-10">
+    
+            <div class="max-w-5xl mx-auto mb-24" data-aos="zoom-in">
+                <div class="relative bg-gradient-to-br from-gray-900 to-black border border-elite-red/50 rounded-2xl p-8 lg:p-12 overflow-hidden shadow-[0_0_50px_rgba(185,28,28,0.15)]">
+                    
+                    <div class="absolute top-6 right-6 flex items-center gap-2 bg-red-950/50 border border-red-500/30 px-3 py-1 rounded-full">
+                        <span class="relative flex h-3 w-3">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>
+                        </span>
+                        <span class="text-xs font-bold text-red-400 tracking-wider uppercase">Quinzenal</span>
+                    </div>
+    
+                    <div class="flex flex-col lg:flex-row items-start gap-10">
+                        <div class="flex-shrink-0">
+                            <div class="w-20 h-20 bg-elite-red/10 rounded-2xl flex items-center justify-center border border-elite-red/20 text-elite-red">
+                                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                            </div>
+                        </div>
+    
+                        <div class="flex-1">
+                            <h3 class="text-3xl font-black text-white mb-2">HOTSEATS AO VIVO</h3>
+                            <p class="text-gray-400 text-lg mb-6">
+                                Você não estuda sozinho. Você ajusta sua atuação <span class="text-white font-semibold">ao vivo</span>.
+                            </p>
+    
+                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-6">
+                                <li class="flex items-center gap-3 text-gray-300">
+                                    <svg class="w-5 h-5 text-elite-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Encontros quinzenais
+                                </li>
+                                <li class="flex items-center gap-3 text-gray-300">
+                                    <svg class="w-5 h-5 text-elite-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Modelo "Cadeira Quente"
+                                </li>
+                                <li class="flex items-center gap-3 text-gray-300">
+                                    <svg class="w-5 h-5 text-elite-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Análise de casos reais
+                                </li>
+                                <li class="flex items-center gap-3 text-gray-300">
+                                    <svg class="w-5 h-5 text-elite-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Revisão de estratégia e peças
+                                </li>
+                            </ul>
+                            
+                            <div class="mt-6 pt-6 border-t border-gray-800">
+                                <p class="text-white font-medium flex items-center gap-2">
+                                    <span class="text-elite-red">➜</span> Direcionamento claro do próximo passo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="max-w-4xl mx-auto mb-32">
+                <h3 class="text-2xl font-bold text-white text-center mb-10 flex items-center justify-center gap-3">
+                    <span class="bg-gray-800 text-gray-400 w-8 h-8 rounded-full flex items-center justify-center text-sm">?</span>
+                    Perguntas Frequentes
+                </h3>
+    
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800" data-aos="fade-up" data-aos-delay="0">
+                        <h4 class="text-white font-bold mb-2">Este curso é para leigos?</h4>
+                        <p class="text-gray-400 text-sm">Não. É um curso exclusivo para advogados.</p>
+                    </div>
+    
+                    <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800" data-aos="fade-up" data-aos-delay="100">
+                        <h4 class="text-white font-bold mb-2">É focado em Juizado Especial?</h4>
+                        <p class="text-gray-400 text-sm">Não. A lógica do curso prioriza Vara Cível, com visão estratégica completa.</p>
+                    </div>
+    
+                    <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800" data-aos="fade-up" data-aos-delay="200">
+                        <h4 class="text-white font-bold mb-2">Promete resultados financeiros?</h4>
+                        <p class="text-gray-400 text-sm">Não. O curso ensina como atuar onde há dinheiro, com técnica e critério, sem promessas vazias.</p>
+                    </div>
+    
+                    <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800" data-aos="fade-up" data-aos-delay="300">
+                        <h4 class="text-white font-bold mb-2">Há suporte?</h4>
+                        <p class="text-gray-400 text-sm">Sim. Hotseats quinzenais ao vivo e materiais práticos de apoio.</p>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <div class="text-center max-w-4xl mx-auto relative" data-aos="fade-up" data-aos-offset="10">
+                
+                <div class="w-20 h-1 bg-elite-red mx-auto mb-8"></div>
+    
+                <h2 class="text-3xl md:text-5xl font-black text-white leading-tight mb-6">
+                    ESTE CURSO NÃO É SOBRE <br>
+                    <span class="text-gray-500">TEORIA BANCÁRIA.</span>
+                </h2>
+                
+                <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto font-light">
+                    É sobre posicionar seu escritório onde há <strong class="text-white">dinheiro, demanda e réus solventes</strong>.
+                </p>
+    
+                <div class="flex flex-col items-center gap-4">
+                    <a href="#checkout" class="relative inline-flex items-center justify-center px-10 py-6 text-xl lg:text-2xl font-black text-white transition-all duration-200 bg-elite-red rounded-lg focus:outline-none hover:bg-elite-redHover hover:scale-105 shadow-[0_0_40px_rgba(185,28,28,0.4)] ring-4 ring-elite-red/20">
+                        QUERO ENTRAR PARA O ELITE
+                        <svg class="w-6 h-6 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                    
+                    <div class="flex items-center gap-4 text-sm text-gray-500 mt-4">
+                        <span class="flex items-center gap-1"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg> Pagamento Seguro</span>
+                        <span class="flex items-center gap-1"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg> Acesso Imediato</span>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+        
+        <footer class="mt-24 border-t border-gray-900 pt-8 text-center">
+            <p class="text-gray-600 text-xs uppercase tracking-widest">
+                &copy; 2026 Elite Antifraude Bancária. Todos os direitos reservados.
+            </p>
+        </footer>
+    
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicialização das Animações
+        AOS.init({
+            once: true, // Anima apenas uma vez ao rolar
+            offset: 100, // Trigger um pouco antes do elemento aparecer
+        });
+    </script>
+</body>
+</html>
